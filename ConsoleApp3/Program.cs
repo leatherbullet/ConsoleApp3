@@ -9,7 +9,7 @@ namespace ConsoleApp3
             Random random = new Random();
 
             int maxElement = int.MinValue;
-            int minElement = int.MaxValue;
+            int valueForOverwriting = 0;
             int minValue = 0;
             int maxValue = 10;
 
@@ -27,10 +27,6 @@ namespace ConsoleApp3
                     {
                         maxElement = array[i, j];
                     }
-                    if(minElement > array[i,j])
-                    {
-                        minElement = array[i,j];
-                    }
                 }
 
                 Console.WriteLine();
@@ -44,7 +40,7 @@ namespace ConsoleApp3
                 {
                     if(array[i, j] == maxElement)
                     {
-                        array[i,j] = minElement;
+                        array[i,j] = valueForOverwriting;
                     }
 
                     Console.Write(array[i, j] + " ");
