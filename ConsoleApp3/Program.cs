@@ -29,7 +29,7 @@ namespace ConsoleApp3
                     }
                     if(minElement > array[i,j])
                     {
-                        minElement = array[i,j]
+                        minElement = array[i,j];
                     }
                 }
 
